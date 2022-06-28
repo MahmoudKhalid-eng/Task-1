@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:task1/screens/login_screen.dart';
+import 'package:task1/screens/on_boarding_screen.dart';
+import 'package:task1/screens/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
-      home: const Scaffold(),
+      home: const OnBoardingScreen(),
     );
   }
 }
